@@ -1,3 +1,4 @@
+
 import "./Header.scss";
 
 function Header() {
@@ -9,7 +10,7 @@ function Header() {
                 <div className="row align-items-center header__row">
 
                     {/* Logo */}
-                    <div className="col-md-3">
+                    <div className="col-12 col-md-3">
 
                         <div className="header__logo">
                             <h1>EduNexa</h1>
@@ -18,7 +19,7 @@ function Header() {
                     </div>
 
                     {/* Navigation */}
-                    <div className="col-md-6">
+                    <div className="col-12 col-md-6">
 
                         <nav className="header__nav">
                             <a href="/">Home</a>
@@ -31,7 +32,7 @@ function Header() {
                     </div>
 
                     {/* Action */}
-                    <div className="col-md-3">
+                    <div className="col-12 col-md-3">
 
                         <div className="header__action">
                             <button>
@@ -50,3 +51,4 @@ function Header() {
 }
 
 export default Header;
+
