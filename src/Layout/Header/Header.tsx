@@ -10,7 +10,6 @@ function Header() {
 
                 <div className="row align-items-center header__row">
 
-                    {/* Logo */}
                     <div className="col-12 col-md-3">
 
                         <div className="header__logo">
@@ -19,7 +18,6 @@ function Header() {
 
                     </div>
 
-                    {/* Navigation */}
                     <div className="col-12 col-md-6">
 
                         <nav className="header__nav">
@@ -32,15 +30,14 @@ function Header() {
 
                     </div>
 
-                    {/* Action */}
                     <div className="col-12 col-md-3">
 
                         <div className="header__action">
-                           <button>
-    <Link to="/Aadharcard">
-        Hospitals
-    </Link>
-</button>
+                            <button>
+                                <Link to="/Aadharcard">
+                                    LogIn
+                                </Link>
+                            </button>
                         </div>
 
                     </div>
