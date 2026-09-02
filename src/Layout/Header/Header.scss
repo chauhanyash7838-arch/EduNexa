@@ -1,4 +1,5 @@
 
+
 .header {
     width: 100%;
     background: #ffffff;
@@ -8,36 +9,17 @@
         align-items: center;
     }
 
-    // =========================
-    // LOGO
-    // =========================
-
+    // Logo
     &__logo {
-
-        a {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            text-decoration: none;
-        }
-
         h1 {
             margin: 0;
             color: #4f46e5;
             font-size: 25px;
             font-weight: 800;
-            line-height: 1;
-        }
-
-        a:hover h1 {
-            color: #3730a3;
         }
     }
 
-    // =========================
-    // NAVIGATION
-    // =========================
-
+    // Navigation
     &__nav {
         display: flex;
         align-items: center;
@@ -45,10 +27,11 @@
         gap: 30px;
 
         a {
-            color: #555555;
+            color: #555;
             text-decoration: none;
             font-size: 15px;
             font-weight: 500;
+            white-space: nowrap;
             transition: 0.3s;
 
             &:hover {
@@ -61,10 +44,7 @@
         }
     }
 
-    // =========================
-    // ACTION BUTTON
-    // =========================
-
+    // Button
     &__action {
         text-align: right;
 
@@ -73,113 +53,81 @@
             padding: 12px 22px;
             border-radius: 8px;
             background: #4f46e5;
-            color: #ffffff;
+            color: white;
             font-size: 14px;
             font-weight: 600;
             cursor: pointer;
-            transition: 0.3s;
-
-            &:hover {
-                background: #4338ca;
-                transform: translateY(-2px);
-            }
         }
     }
 
-    // =========================
-    // TABLET
-    // =========================
-
+    // Tablet
     @media (max-width: 991px) {
 
         &__nav {
-            gap: 16px;
+            gap: 15px;
 
             a {
-                font-size: 14px;
-            }
-        }
-
-        &__action {
-
-            button {
-                padding: 10px 14px;
                 font-size: 13px;
             }
         }
+
+        &__action button {
+            padding: 10px 14px;
+            font-size: 13px;
+        }
     }
 
-    // =========================
-    // MOBILE
-    // =========================
-
+    // Mobile
     @media (max-width: 767px) {
 
         &__row {
-            min-height: auto;
             padding: 20px 0;
         }
 
         &__logo {
             text-align: center;
-            margin-bottom: 18px;
-
-            a {
-                justify-content: center;
-            }
+            margin-bottom: 15px;
 
             h1 {
-                font-size: 100px;
+                font-size: 22px;
             }
         }
 
         &__nav {
             width: 100%;
-            display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px 16px;
+            gap: 10px 18px;
             margin-bottom: 18px;
+        }
 
-            a {
-                font-size: 13px;
-                white-space: nowrap;
-            }
+        &__nav a {
+            font-size: 13px;
         }
 
         &__action {
-            width: 100%;
             text-align: center;
-
-            button {
-                width: auto;
-                min-width: 180px;
-                padding: 10px 18px;
-            }
         }
     }
 
-    // =========================
-    // SMALL PHONE
-    // =========================
-
+    // Small phones
     @media (max-width: 400px) {
-
-        &__nav {
-            gap: 8px 12px;
-
-            a {
-                font-size: 12px;
-            }
-        }
 
         &__logo h1 {
             font-size: 20px;
         }
 
+        &__nav {
+            gap: 8px 12px;
+        }
+
+        &__nav a {
+            font-size: 12px;
+        }
+
         &__action button {
-            min-width: 160px;
+            padding: 10px 18px;
         }
     }
 }
+
 
