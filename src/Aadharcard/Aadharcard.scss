@@ -112,3 +112,64 @@
   background: #222222;
 }
 
+
+@media (max-width: 576px) {
+
+  .aadhar-form-page {
+    padding: 20px 12px;
+    align-items: flex-start;
+  }
+
+  .aadhar-form-card {
+    width: 100%;
+    padding: 20px 16px;
+    border-radius: 6px;
+  }
+
+  .aadhar-form-card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-group label {
+    font-size: 13px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 14px;
+    padding: 9px 10px;
+  }
+
+  .form-group input,
+  .form-group select {
+    height: 40px;
+  }
+
+  .aadhar-form-card button {
+    height: 42px;
+    font-size: 14px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+
+  .aadhar-form-page {
+    padding: 15px 8px;
+  }
+
+  .aadhar-form-card {
+    padding: 18px 12px;
+  }
+
+  .aadhar-form-card h2 {
+    font-size: 18px;
+  }
+}
+

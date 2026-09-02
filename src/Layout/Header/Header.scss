@@ -1,3 +1,4 @@
+
 .header {
     width: 100%;
     background: #ffffff;
@@ -10,6 +11,7 @@
     // =========================
     // LOGO
     // =========================
+
     &__logo {
 
         a {
@@ -19,82 +21,34 @@
             text-decoration: none;
         }
 
-        .logo-icon {
-            width: 42px;
-            height: 42px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            background: #4f46e5;
-            color: #ffffff;
-
-            border-radius: 12px;
-
-            font-size: 22px;
-            font-weight: 800;
-
-            box-shadow: 0 6px 15px rgba(79, 70, 229, 0.25);
-
-            transition: 0.3s ease;
-        }
-
-        .logo-text {
-            display: flex;
-            flex-direction: column;
-        }
-
         h1 {
             margin: 0;
-
             color: #4f46e5;
-
             font-size: 25px;
             font-weight: 800;
             line-height: 1;
         }
 
-        .tagline {
-            margin-top: 5px;
-
-            color: #777777;
-
-            font-size: 10px;
-            font-weight: 500;
-            letter-spacing: 0.3px;
-        }
-
-        a:hover {
-
-            .logo-icon {
-                transform: translateY(-2px);
-                box-shadow: 0 8px 20px rgba(79, 70, 229, 0.35);
-            }
-
-            h1 {
-                color: #3730a3;
-            }
+        a:hover h1 {
+            color: #3730a3;
         }
     }
 
     // =========================
     // NAVIGATION
     // =========================
+
     &__nav {
         display: flex;
         align-items: center;
         justify-content: center;
-
         gap: 30px;
 
         a {
             color: #555555;
             text-decoration: none;
-
             font-size: 15px;
             font-weight: 500;
-
             transition: 0.3s;
 
             &:hover {
@@ -110,24 +64,19 @@
     // =========================
     // ACTION BUTTON
     // =========================
+
     &__action {
         text-align: right;
 
         button {
             border: none;
-
             padding: 12px 22px;
-
             border-radius: 8px;
-
             background: #4f46e5;
             color: #ffffff;
-
             font-size: 14px;
             font-weight: 600;
-
             cursor: pointer;
-
             transition: 0.3s;
 
             &:hover {
@@ -140,10 +89,11 @@
     // =========================
     // TABLET
     // =========================
+
     @media (max-width: 991px) {
 
         &__nav {
-            gap: 18px;
+            gap: 16px;
 
             a {
                 font-size: 14px;
@@ -153,7 +103,7 @@
         &__action {
 
             button {
-                padding: 10px 15px;
+                padding: 10px 14px;
                 font-size: 13px;
             }
         }
@@ -162,35 +112,73 @@
     // =========================
     // MOBILE
     // =========================
+
     @media (max-width: 767px) {
 
         &__row {
-            padding-top: 20px;
-            padding-bottom: 20px;
+            min-height: auto;
+            padding: 20px 0;
         }
 
         &__logo {
             text-align: center;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
 
             a {
                 justify-content: center;
             }
+
+            h1 {
+                font-size: 100px;
+            }
         }
 
         &__nav {
+            width: 100%;
+            display: flex;
             flex-wrap: wrap;
-            gap: 15px;
+            justify-content: center;
+            gap: 10px 16px;
+            margin-bottom: 18px;
 
-            margin-bottom: 15px;
+            a {
+                font-size: 13px;
+                white-space: nowrap;
+            }
         }
 
         &__action {
+            width: 100%;
             text-align: center;
 
             button {
-                width: 100%;
+                width: auto;
+                min-width: 180px;
+                padding: 10px 18px;
             }
+        }
+    }
+
+    // =========================
+    // SMALL PHONE
+    // =========================
+
+    @media (max-width: 400px) {
+
+        &__nav {
+            gap: 8px 12px;
+
+            a {
+                font-size: 12px;
+            }
+        }
+
+        &__logo h1 {
+            font-size: 20px;
+        }
+
+        &__action button {
+            min-width: 160px;
         }
     }
 }

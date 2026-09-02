@@ -1,3 +1,4 @@
+
 import './Footer.scss'
 
 function Footer() {
@@ -6,14 +7,15 @@ function Footer() {
 
             {/* Main Footer */}
             <div className="container">
-                <div className="row education-footer__main">
+             <div className="row education-footer__main">
 
                     {/* Brand */}
-                    <div className="col-lg-4 col-md-6 mb-4">
+                    <div className="col-12 col-md-6 col-lg-4 mb-4">
 
                         <div className="education-footer__brand">
 
                             <a href="/" className="education-footer__logo">
+
                                 <span className="education-footer__logo-icon">
                                     🎓
                                 </span>
@@ -21,6 +23,7 @@ function Footer() {
                                 <span>
                                     Edu<span>Verse</span>
                                 </span>
+
                             </a>
 
                             <p>
@@ -42,7 +45,7 @@ function Footer() {
 
 
                     {/* Explore */}
-                    <div className="col-lg-2 col-md-6 mb-4">
+                    <div className="col-6 col-md-6 col-lg-2 mb-4">
 
                         <div className="education-footer__links">
 
@@ -60,7 +63,7 @@ function Footer() {
 
 
                     {/* Company */}
-                    <div className="col-lg-2 col-md-6 mb-4">
+                    <div className="col-6 col-md-6 col-lg-2 mb-4">
 
                         <div className="education-footer__links">
 
@@ -78,7 +81,7 @@ function Footer() {
 
 
                     {/* Resources */}
-                    <div className="col-lg-2 col-md-6 mb-4">
+                    <div className="col-6 col-md-6 col-lg-2 mb-4">
 
                         <div className="education-footer__links">
 
@@ -96,7 +99,7 @@ function Footer() {
 
 
                     {/* Contact */}
-                    <div className="col-lg-2 col-md-6 mb-4">
+                    <div className="col-6 col-md-6 col-lg-2 mb-4">
 
                         <div className="education-footer__links">
 
@@ -121,7 +124,7 @@ function Footer() {
 
                     <div className="row align-items-center">
 
-                        <div className="col-lg-7">
+                        <div className="col-12 col-lg-7">
 
                             <div className="education-footer__newsletter-content">
 
@@ -143,7 +146,7 @@ function Footer() {
                         </div>
 
 
-                        <div className="col-lg-5">
+                        <div className="col-12 col-lg-5">
 
                             <form className="education-footer__form">
 
@@ -174,7 +177,7 @@ function Footer() {
 
                     <div className="row align-items-center">
 
-                        <div className="col-md-6">
+                        <div className="col-12 col-md-6">
 
                             <p>
                                 © 2026 EduVerse. All rights reserved.
@@ -182,7 +185,7 @@ function Footer() {
 
                         </div>
 
-                        <div className="col-md-6">
+                        <div className="col-12 col-md-6">
 
                             <div className="education-footer__legal">
 
@@ -213,3 +216,4 @@ function Footer() {
 }
 
 export default Footer;
+

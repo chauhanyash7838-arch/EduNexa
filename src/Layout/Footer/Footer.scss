@@ -1,7 +1,17 @@
+
+
+
 .education-footer {
     width: 100%;
     background: #0b1120;
     color: #fff;
+    overflow: hidden;
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
 
     // ================================
     // MAIN FOOTER
@@ -28,20 +38,14 @@
 
             font-size: 25px;
             font-weight: 700;
-
-            span span {
-                color: #818cf8;
-            }
         }
 
         p {
             max-width: 330px;
-
             margin-top: 20px;
             margin-bottom: 22px;
 
             color: #94a3b8;
-
             font-size: 14px;
             line-height: 1.8;
         }
@@ -55,6 +59,8 @@
         align-items: center;
         justify-content: center;
 
+        flex-shrink: 0;
+
         background: linear-gradient(
             135deg,
             #6366f1,
@@ -62,7 +68,6 @@
         );
 
         border-radius: 12px;
-
         font-size: 22px;
     }
 
@@ -97,7 +102,6 @@
                 background: #6366f1;
                 border-color: #6366f1;
                 color: #fff;
-
                 transform: translateY(-4px);
             }
         }
@@ -113,7 +117,6 @@
             margin-bottom: 22px;
 
             color: #fff;
-
             font-size: 15px;
             font-weight: 600;
         }
@@ -122,11 +125,11 @@
             display: block;
 
             width: fit-content;
+            max-width: 100%;
 
             margin-bottom: 13px;
 
             color: #94a3b8;
-
             text-decoration: none;
 
             font-size: 13px;
@@ -146,6 +149,8 @@
 
             font-size: 13px;
             line-height: 1.6;
+
+            overflow-wrap: anywhere;
         }
     }
 
@@ -154,6 +159,8 @@
     // ================================
 
     &__newsletter {
+        width: 100%;
+
         padding: 38px 0;
 
         background: #111a2e;
@@ -187,6 +194,7 @@
             color: #94a3b8;
 
             font-size: 13px;
+            line-height: 1.6;
         }
     }
 
@@ -195,7 +203,10 @@
     // ================================
 
     &__form {
+        width: 100%;
+
         display: flex;
+        align-items: center;
 
         padding: 5px;
 
@@ -206,6 +217,7 @@
 
         input {
             width: 100%;
+            min-width: 0;
 
             padding: 11px 13px;
 
@@ -271,7 +283,6 @@
             margin-left: 22px;
 
             color: #64748b;
-
             text-decoration: none;
 
             font-size: 12px;
@@ -306,15 +317,55 @@
     @media (max-width: 767px) {
 
         &__main {
-            padding: 45px 15px 20px;
+            padding-top: 45px;
+            padding-bottom: 25px;
         }
 
+        // Brand
+        &__brand {
+            margin-bottom: 20px;
+
+            p {
+                max-width: 100%;
+            }
+        }
+
+        // Keep links 2 by 2
+        &__links {
+            margin-top: 15px;
+
+            h5 {
+                margin-bottom: 18px;
+            }
+        }
+
+        // Newsletter
         &__newsletter {
             padding: 35px 15px;
         }
 
+        &__newsletter-content {
+            text-align: center;
+
+            h3 {
+                font-size: 21px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        // Newsletter form
+        &__form {
+            margin-top: 25px;
+            width: 100%;
+        }
+
+        // Bottom
         &__bottom {
             padding: 20px 15px;
+
             text-align: center;
         }
 
@@ -335,19 +386,62 @@
 
     @media (max-width: 480px) {
 
+        &__main {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        // Newsletter form becomes vertical
         &__form {
             display: block;
             padding: 8px;
 
             input {
                 display: block;
+                width: 100%;
+
                 padding: 12px;
             }
 
             button {
+                display: block;
                 width: 100%;
-                margin-top: 6px;
+
+                margin-top: 8px;
             }
+        }
+
+        &__newsletter {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        &__bottom {
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 }
+
+@media (max-width: 767px) {
+
+    .education-footer .footer-mobile-grid {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 25px 15px !important;
+    }
+
+    .education-footer .footer-mobile-grid > div {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+        margin: 0 !important;
+    }
+
+    .education-footer .footer-mobile-grid > div:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+
+
