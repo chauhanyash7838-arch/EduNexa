@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import "./Header.scss";
 
 function Header() {
@@ -35,9 +36,11 @@ function Header() {
                     <div className="col-12 col-md-3">
 
                         <div className="header__action">
-                            <button>
-                                Get Started
-                            </button>
+                           <button>
+    <Link to="/Aadharcard">
+        Hospitals
+    </Link>
+</button>
                         </div>
 
                     </div>
