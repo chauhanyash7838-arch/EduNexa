@@ -1,0 +1,353 @@
+.education-footer {
+    width: 100%;
+    background: #0b1120;
+    color: #fff;
+
+    // ================================
+    // MAIN FOOTER
+    // ================================
+
+    &__main {
+        padding-top: 70px;
+        padding-bottom: 45px;
+    }
+
+    // ================================
+    // BRAND
+    // ================================
+
+    &__brand {
+
+        .education-footer__logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+
+            color: #fff;
+            text-decoration: none;
+
+            font-size: 25px;
+            font-weight: 700;
+
+            span span {
+                color: #818cf8;
+            }
+        }
+
+        p {
+            max-width: 330px;
+
+            margin-top: 20px;
+            margin-bottom: 22px;
+
+            color: #94a3b8;
+
+            font-size: 14px;
+            line-height: 1.8;
+        }
+    }
+
+    &__logo-icon {
+        width: 44px;
+        height: 44px;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        background: linear-gradient(
+            135deg,
+            #6366f1,
+            #8b5cf6
+        );
+
+        border-radius: 12px;
+
+        font-size: 22px;
+    }
+
+    // ================================
+    // SOCIAL
+    // ================================
+
+    &__social {
+
+        a {
+            width: 38px;
+            height: 38px;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-right: 8px;
+
+            border: 1px solid #263248;
+            border-radius: 50%;
+
+            color: #94a3b8;
+            text-decoration: none;
+
+            font-size: 13px;
+            font-weight: 600;
+
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: #6366f1;
+                border-color: #6366f1;
+                color: #fff;
+
+                transform: translateY(-4px);
+            }
+        }
+    }
+
+    // ================================
+    // LINKS
+    // ================================
+
+    &__links {
+
+        h5 {
+            margin-bottom: 22px;
+
+            color: #fff;
+
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        a {
+            display: block;
+
+            width: fit-content;
+
+            margin-bottom: 13px;
+
+            color: #94a3b8;
+
+            text-decoration: none;
+
+            font-size: 13px;
+
+            transition: all 0.3s ease;
+
+            &:hover {
+                color: #818cf8;
+                transform: translateX(4px);
+            }
+        }
+
+        p {
+            margin-bottom: 12px;
+
+            color: #94a3b8;
+
+            font-size: 13px;
+            line-height: 1.6;
+        }
+    }
+
+    // ================================
+    // NEWSLETTER
+    // ================================
+
+    &__newsletter {
+        padding: 38px 0;
+
+        background: #111a2e;
+
+        border-top: 1px solid #1e293b;
+        border-bottom: 1px solid #1e293b;
+    }
+
+    &__newsletter-content {
+
+        span {
+            color: #818cf8;
+
+            font-size: 11px;
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+        }
+
+        h3 {
+            margin-top: 7px;
+            margin-bottom: 7px;
+
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        p {
+            margin: 0;
+
+            color: #94a3b8;
+
+            font-size: 13px;
+        }
+    }
+
+    // ================================
+    // FORM
+    // ================================
+
+    &__form {
+        display: flex;
+
+        padding: 5px;
+
+        background: #0b1120;
+
+        border: 1px solid #263248;
+        border-radius: 10px;
+
+        input {
+            width: 100%;
+
+            padding: 11px 13px;
+
+            background: transparent;
+
+            border: 0;
+            outline: 0;
+
+            color: #fff;
+
+            font-size: 13px;
+
+            &::placeholder {
+                color: #64748b;
+            }
+        }
+
+        button {
+            flex-shrink: 0;
+
+            padding: 11px 18px;
+
+            background: #6366f1;
+
+            border: 0;
+            border-radius: 7px;
+
+            color: #fff;
+
+            font-size: 13px;
+            font-weight: 600;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+
+            &:hover {
+                background: #4f46e5;
+            }
+        }
+    }
+
+    // ================================
+    // BOTTOM
+    // ================================
+
+    &__bottom {
+        padding: 22px 0;
+    }
+
+    &__bottom p {
+        margin: 0;
+
+        color: #64748b;
+
+        font-size: 12px;
+    }
+
+    &__legal {
+        text-align: right;
+
+        a {
+            margin-left: 22px;
+
+            color: #64748b;
+
+            text-decoration: none;
+
+            font-size: 12px;
+
+            transition: 0.3s;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+
+    // ================================
+    // TABLET
+    // ================================
+
+    @media (max-width: 991px) {
+
+        &__main {
+            padding-top: 55px;
+        }
+
+        &__form {
+            margin-top: 25px;
+        }
+    }
+
+    // ================================
+    // MOBILE
+    // ================================
+
+    @media (max-width: 767px) {
+
+        &__main {
+            padding: 45px 15px 20px;
+        }
+
+        &__newsletter {
+            padding: 35px 15px;
+        }
+
+        &__bottom {
+            padding: 20px 15px;
+            text-align: center;
+        }
+
+        &__legal {
+            margin-top: 15px;
+            text-align: center;
+
+            a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    }
+
+    // ================================
+    // SMALL MOBILE
+    // ================================
+
+    @media (max-width: 480px) {
+
+        &__form {
+            display: block;
+            padding: 8px;
+
+            input {
+                display: block;
+                padding: 12px;
+            }
+
+            button {
+                width: 100%;
+                margin-top: 6px;
+            }
+        }
+    }
+}
