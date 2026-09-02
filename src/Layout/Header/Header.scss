@@ -46,17 +46,15 @@
 
   
 &__action {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    text-align: right;
 
     button {
         border: none;
-        padding: 12px 22px;
+        padding: 12px 20px;
         border-radius: 8px;
         background: #4f46e5;
         color: white;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 600;
         cursor: pointer;
 
